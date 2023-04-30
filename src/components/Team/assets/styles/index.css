@@ -1,0 +1,88 @@
+.card{
+    margin: 20px 20px 20px 0px;
+}
+.slick-prev:before{
+    color:rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 1000; 
+}
+ .slick-next:before{
+    color:rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 1000; 
+}
+
+.slick-prev {
+    font-size: 20px;
+    line-height: 0;
+    position: absolute;
+    top: -86px;
+    left: 967px;
+    display: block;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+}
+.slick-next{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: -86px;
+    right:54px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+@media screen and (max-width:992px){
+    .slick-prev:before{
+        font-size: 20px;
+        font-weight: 1000; 
+    }
+     .slick-next:before{
+        font-size: 20px;
+        font-weight: 1000; 
+    }
+    
+    .slick-prev {
+        top: -69px;
+        left: 593px;
+    }
+    .slick-next{
+        top: -69px;
+        right:57px;
+       
+    }
+}
+
+@media screen and (max-width:767px){
+    .slick-prev:before{
+        font-size: 20px;
+        font-weight: 1000; 
+    }
+     .slick-next:before{
+        font-size: 20px;
+        font-weight: 1000; 
+    }
+    
+    .slick-prev {
+        top: -69px;
+        left: 269px;
+    }
+    .slick-next{
+        top: -69px;
+        right:37px;
+       
+    }
+}

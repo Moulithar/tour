@@ -1,0 +1,25 @@
+.btn-main{
+    background-color: #ff7d6b;
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    border:none;
+    column-gap: 20px;
+}
+.btn-sec{
+    background-color: transparent;
+    color:#fff;
+    border:2px solid #fff;
+}
+.btn-ter{
+    background-color: transparent;
+    color:#000000;
+    border:2px solid #000000;
+    font-size: 25px;
+}
+
+.btn-sec:hover{
+    background-color: #ff7d6b;
+    color:#fff;
+    border:2px solid #fff;
+}

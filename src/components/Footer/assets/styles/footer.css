@@ -1,0 +1,19 @@
+    .footer{
+        background-color: #252c63;
+        color:#fff;
+        padding: 30px 0px;
+    }
+    .footer ul, ol {
+        margin-left: 1px;
+        list-style-position: outside;
+        list-style-image: none;
+    }
+
+    .footer-btn{
+        background-color: #3b4179;
+        color:#fff;
+    }
+    .footer-btn:hover{
+        background-color: #ff7d6b;
+    }
+   
