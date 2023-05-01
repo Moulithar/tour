@@ -114,6 +114,7 @@ const IndexPage = () => (
  
     <Bunzoslider />
     <Team  />
+  <div>Test merge</div>
     <Blog dataItems={blogOptions}/>
     <Header />
     <Footer />
