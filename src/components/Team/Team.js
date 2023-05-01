@@ -37,158 +37,149 @@ const Team = ()=>
             <div className="d-flex justify-start p-5">
             <h1>most popular</h1>         
             </div>
-          
-
         </Row>
-      <Slider {...settings}>
-        <div className="bz-card">
-     
+        <Slider {...settings}>
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img1} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+            {  
+                // props.dataItems.map((data) => {
+                //   return (
+                //     <Col lg={4} md={6} xs={12} className="bz-cards">
+                //         <Card className="text-center " >
+                //         <img src={data.image} classname="teamimg"/>
+                //           <Card.Body>
+                //           <Card.Title className="cardtitle">{data.title}</Card.Title>
+                //           <div classname="">
+                //           <i className=" icon-team icon-fb"></i>
+                //           <i className="icon-team icon-twit"></i>
+                //           <i className="icon-team icon-ln"></i>
+                //           <i className="icon-team icon-git"></i>
+                //           </div>
+                //           <Card.Text>
+                //             {data.desc}
+                //           </Card.Text>
+                //           </Card.Body>
+                //         </Card>
+                //     </Col>
+                //   )
+                // })
+            }
 
-    <Card>
-      <Card.Img  src={img1} />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-          
-          {
-            
-            // props.dataItems.map((data) => {
-            //   return (
-            //     <Col lg={4} md={6} xs={12} className="bz-cards">
-            //         <Card className="text-center " >
-            //         <img src={data.image} classname="teamimg"/>
-            //           <Card.Body>
-            //           <Card.Title className="cardtitle">{data.title}</Card.Title>
-            //           <div classname="">
-            //           <i className=" icon-team icon-fb"></i>
-            //           <i className="icon-team icon-twit"></i>
-            //           <i className="icon-team icon-ln"></i>
-            //           <i className="icon-team icon-git"></i>
-            //           </div>
-            //           <Card.Text>
-            //             {data.desc}
-            //           </Card.Text>
-            //           </Card.Body>
-            //         </Card>
-            //     </Col>
-            //   )
-            // })
-          }
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img2} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img3} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img4} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img5} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img6} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img7} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img8} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-        <div className="bz-card">
-            <Card>
-            <Card.Img  src={img9} />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-            </Card>
-        </div>
-      </Slider>
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img2} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img3} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img4} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img5} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img6} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img7} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img8} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+
+            <div className="bz-card">
+                <Card>
+                <Card.Img  src={img9} />
+                <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+            </div>
+        </Slider>
       </Container>
-     
-  
       </>
     );
     

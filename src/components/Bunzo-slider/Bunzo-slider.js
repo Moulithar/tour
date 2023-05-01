@@ -25,7 +25,7 @@ const Bunzoslider = () =>
                     <div className="nav-items">
                         <ul className="list-inline d-flex justify-content-center align-items-center gap-5">                     
                             <li className="list-inline-items ">
-                                <a className=" d-flex gap-2" href="" >home<i class="bi bi-caret-down-fill"></i></a>
+                                <a className=" d-flex gap-2" href="" >home<i className="bi bi-caret-down-fill"></i></a>
                             </li>
                             <li className="list-inline-items">
                                 <a className="" href="" >about</a>
@@ -34,7 +34,7 @@ const Bunzoslider = () =>
                                 <a className="" href="" >category</a>
                             </li>
                             <li className="list-inline-items">
-                                <a className=" d-flex gap-2" href="" >pages<i class="bi bi-caret-down-fill"></i></a>
+                                <a className=" d-flex gap-2" href="" >pages<i className="bi bi-caret-down-fill"></i></a>
                             </li>
                             <li className="list-inline-items">
                                 <a className="" href="" >contact</a>
@@ -92,6 +92,9 @@ const Bunzoslider = () =>
                         </ul>
                     </div>
                 </Nav>
+                {/* <div className="ms-auto d-xl-none d-lg-none">
+                    <a href="#!" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="icon icon-burger-dark"></i></a>
+                  </div> */}
                     
                     {/* <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#link">Link</Nav.Link>
@@ -131,7 +134,27 @@ const Bunzoslider = () =>
                     
                 </Row>
               
-                
+                {/* <div className="offcanvas offcanvas-end offcanvas-sports" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div className="offcanvas-header">
+        <h5 className="offcanvas-title" id="offcanvasRightLabel">
+            <img src="./assets/images/logo.svg" className="logo" />
+        </h5>
+        <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div className="offcanvas-body">
+            <ul className="list-unstyled offcanvas-sports-menu-list">
+                <li>
+                    <a href="book.html">Book Events</a>
+                </li>
+                <li>
+                    <a href="index.html">Book Venues</a>
+                </li>
+                <li>
+                    <a href="#!">Book Stadium Seats</a>
+                </li>
+            </ul>
+        </div>
+    </div> */}
               
             </Container>
         </section>

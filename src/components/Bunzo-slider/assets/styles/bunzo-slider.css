@@ -94,10 +94,6 @@ a:hover{
     text-decoration: none;
 }
 
-    li{
-    margin-bottom:0px !important; 
-    }
-
 @media screen and (max-width:992px){
     .bunzo-slider .slider-content{
         padding-top:80px;

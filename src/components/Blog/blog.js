@@ -19,7 +19,7 @@ function Blog(props) {
           {
             props.dataItems.map((data) => {
               return (
-                <Col lg={4} md={6} xs={12} >
+                <Col lg={4} md={6} xs={12}>
                     <Card className="text-center" >
                     <img src={data.image} className="blogimage" alt="" />
                       <Card.Body>

@@ -9,7 +9,7 @@ const Footer = ()=>{
         <div className="footer">
         <Container >
             <Row className="pt-5">
-                <Col lg={3}>
+                <Col lg={3} xs={12} >
                     <img src={logo} alt="" className="" />
                     <p>Lorem Ipsum is simply dummy text of the industry orem Ipsum has been the industry's since the when unknown.</p>
                             <Button className="footer-btn"><i className="bi bi-facebook"></i></Button>{' '}
@@ -18,9 +18,9 @@ const Footer = ()=>{
                             <Button className="footer-btn"><i className="bi bi-facebook"></i></Button>{' '}<br /><br/>
                             <Button className="btn-main">share ypur thinking<i className="bi bi-facebook"></i></Button>{' '}
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} xs={12}>
                     <Row>
-                        <Col lg={4}>
+                        <Col lg={4} xs={8}>
                             <h4>Company</h4>
                             <div className="list-inline ">
                                 <ul className="list-inline-item list-unstyled">
@@ -32,7 +32,7 @@ const Footer = ()=>{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={4} xs={8}>
                             <h4>quick links</h4>
                         <div className="list-inline ">
                                 <ul className="list-inline-item list-unstyled">
@@ -44,7 +44,7 @@ const Footer = ()=>{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={4}>
+                        <Col lg={4} xs={8}>
                         <h4>quick links</h4>
                         <div className="list-inline ">
                                 <ul className="list-inline-item list-unstyled">
@@ -58,7 +58,7 @@ const Footer = ()=>{
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={3}>
+                <Col lg={3} xs={12}>
                     <h4>subscribe</h4>
                     <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
