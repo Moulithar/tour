@@ -146,9 +146,7 @@ const IndexPage = () => (
  
     <Bunzoslider />
     <Team  />
-  
     <Blog dataItems={blogOptions}/>
-    
     <Slidercard  />
     <Header owl="mu" tag="tes"/>
     <Footer />

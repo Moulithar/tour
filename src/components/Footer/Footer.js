@@ -83,10 +83,7 @@ const Footer = ()=>{
                 </Row>
             </Container>
         </div>
-        </>
-        
-        
-        
+        </> 
     );
 }
 

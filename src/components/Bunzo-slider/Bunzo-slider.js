@@ -106,6 +106,7 @@ const Bunzoslider = () => {
                     <img src={logo} alt="" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
                 <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="mx-auto">
