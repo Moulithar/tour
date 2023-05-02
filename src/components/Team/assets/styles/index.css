@@ -17,6 +17,7 @@
     font-size: 50px;
     font-weight: 1000;  */
 }
+
  .slick-next:before{
     content: "";
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E");
@@ -48,10 +49,11 @@
     border: solid 1px #000;
     border-radius: 3px;
     outline: none;
-    background-color: blue;  
+    background-color: transparent;  
 }
-.slick-prev:hover{
-    background-color: green;
+.slick-prev ,.slick-next:hover{
+    background-color: #ff7d6b;
+    color:black;
 }
 .slick-next{
     font-size: 0;
@@ -80,7 +82,7 @@
     
     .slick-prev {
         top: -69px;
-        left: 593px;
+        left: 533px;
     }
     .slick-next{
         top: -69px;
@@ -101,11 +103,11 @@
     
     .slick-prev {
         top: -69px;
-        left: 269px;
+        left: 250px;
     }
     .slick-next{
         top: -69px;
-        right:37px;
+        right:10px;
        
     }
 }

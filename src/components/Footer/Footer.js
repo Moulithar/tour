@@ -28,7 +28,7 @@ const Footer = ()=>{
                 </Col>
                 <Col lg={6} xs={12}>
                     <Row>
-                        <Col lg={4} xs={8}>
+                        <Col lg={4} xs={12}>
                             <h4>Company</h4>
                             <div className="list-inline ">
                                 <ul className="list-inline-item list-unstyled">
@@ -40,7 +40,7 @@ const Footer = ()=>{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={4} xs={8}>
+                        <Col lg={4} xs={12}>
                             <h4>quick links</h4>
                         <div className="list-inline ">
                                 <ul className="list-inline-item list-unstyled">
@@ -52,7 +52,7 @@ const Footer = ()=>{
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={4} xs={8}>
+                        <Col lg={4} xs={12}>
                         <h4>quick links</h4>
                         <div className="list-inline ">
                                 <ul className="list-inline-item list-unstyled">
@@ -66,7 +66,7 @@ const Footer = ()=>{
                         </Col>
                     </Row>
                 </Col>
-                <Col lg={3} xs={12}>
+                <Col lg={3} xs={6}>
                     <h4>subscribe</h4>
                     <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

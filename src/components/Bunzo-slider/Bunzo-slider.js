@@ -20,7 +20,6 @@ const Bunzoslider = () => {
             }
         });
 
-
         $(".btn-sec").hover(function(){
             $(".btn-sec").toggleClass("btn-sec-active")
 
@@ -35,8 +34,8 @@ const Bunzoslider = () => {
                 <Row>
                 <div className="bz-navbar">
                     {/*  */}
-                    
-                        <Navbar expand="lg" >
+      
+                        {/* <Navbar expand="lg" >
                         <Container>
                             <Navbar.Brand href="#home">
                                 <img src={logo} />
@@ -98,7 +97,7 @@ const Bunzoslider = () => {
                             </Nav>
                             </Navbar.Collapse>
                         </Container>
-                        </Navbar>
+                        </Navbar> */}
 
                     {/*  */}
             <Navbar expand="lg" >           
@@ -147,7 +146,7 @@ const Bunzoslider = () => {
                         </div>
                     </div>
                 </Nav.Link> */}
-                <Dropdown>
+                {/* <Dropdown>
                     <Dropdown.Toggle>
                         Open Menu
                     </Dropdown.Toggle>
@@ -162,19 +161,19 @@ const Bunzoslider = () => {
                                 Logout
                             </Dropdown.Item>
                         </Dropdown.Menu>
-                </Dropdown> 
+                </Dropdown>  */}
 
                 <Nav className="ms-auto">
                     <div className="nav-items">
                         <ul className="list-inline d-flex justify-content-center align-items-center gap-2">
                         <li className="list-inline-items">
                                 <a className="" href="#!" >
-                                <Button className="btn-sec"><i className="bi bi-facebook"></i></Button>{' '}
+                                <Button className="btn-sec"><i className="bi bi-question"></i></Button>{' '}
                                 </a>
                             </li>
                             <li className="list-inline-items">
                                 <a className="" href="#!" >
-                                <Button className="btn-sec"><i className="bi bi-facebook"></i></Button>{' '}
+                                <Button className="btn-sec"><i className="bi bi-gear"></i></Button>{' '}
                                 </a>
                             </li>
                         </ul>
@@ -201,7 +200,8 @@ const Bunzoslider = () => {
                 </Navbar.Collapse>
                 </Container>                   
             </Navbar>
-                </div> 
+        </div> 
+
                 <Row>
                 <Col lg={12} >
                         <div className="slider-content ">

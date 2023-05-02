@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {Card, Col, Row, Container} from "react-bootstrap";
+import "./assets/styles/index.css";
 import img1 from "../../images/images1.webp";
 import img2 from "../../images/images2.webp";
 import img3 from "../../images/images3.webp";
@@ -13,8 +14,8 @@ import img6 from "../../images/images6.webp";
 const Slidercard = (props)=>{
 
      var settings = {
-         dots: false,
-         arrows: true,
+         dots: true,
+         arrows: false,
          autoplay: false,
          autoplaySpeed: 1000,
          slidesToShow: 6,
@@ -52,7 +53,7 @@ const Slidercard = (props)=>{
     const[slide,setslide]= useState([]);
 
     useEffect (() =>{
-        fetch('https://jsonplaceholder.typicode.com/posts?_limit=16')
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=9')
         .then ((response) => response.json())
         .then((data)=> {
            setslide(data);
@@ -70,7 +71,7 @@ const Slidercard = (props)=>{
     return(
         <>
         <Container>
-            <Row>
+            <Row className="slider-card">
                 <Col>
                     <Slider {...settings} className="popular-slider">                    
                         {

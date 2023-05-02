@@ -7,8 +7,8 @@ import "./assets/styles/header.css"
 const  Header =(props)=> {
     return(
         <>
-            <Container>
-                <Row>
+            <Container >
+                <Row className="header">
                     <Col lg={6} md={12}>
                         <img src={orange} alt="" />
                     </Col>

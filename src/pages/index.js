@@ -150,7 +150,7 @@ const IndexPage = () => (
     <Blog dataItems={blogOptions}/>
     
     <Slidercard  />
-    <Header owl="mu" tag="test"/>
+    <Header owl="mu" tag="tes"/>
     <Footer />
     {/* <h1>hello m</h1>
       <div className="text-center">
