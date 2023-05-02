@@ -1,18 +1,106 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {Container, Row, Col,Button,Nav,Navbar,Dropdown} from 'react-bootstrap';
-import ReactDOM from 'react-dom';
+import { Link } from "gatsby"
 import $ from 'jquery';
 import logo from "../../images/logo.webp";
 import "./assets/styles/bunzo-slider.css";
 
-const Bunzoslider = () =>
-{
+const Bunzoslider = () => {
+
+    useEffect(() => {
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+        
+             //>=, not <=
+            if (scroll >= 100) {
+                //clearHeader, not clearheader - caps H
+                $(".bunzo-slider").addClass("scrollheader");
+            } else {
+                $(".bunzo-slider").removeClass("scrollheader");
+            }
+        });
+
+
+        $(".btn-sec").hover(function(){
+            $(".btn-sec").toggleClass("btn-sec-active")
+
+        })
+
+    })
+
     return(
         <>
-        <section className="bunzo-slider" >
+        <section className="bunzo-slider">
             <Container fluid>
                 <Row>
                 <div className="bz-navbar">
+                    {/*  */}
+                    
+                        <Navbar expand="lg" >
+                        <Container>
+                            <Navbar.Brand href="#home">
+                                <img src={logo} />
+                            </Navbar.Brand>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="mx-auto">
+                                <Nav.Link href="#home">Home
+                                    <ul className="list-unstyled">
+                                        <li>
+                                            <Link to="">test</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test2</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test2</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test2</Link>
+                                        </li>
+                                    </ul>
+                                </Nav.Link>
+                                <Nav.Link href="#link">
+                                    Link
+                                    <ul className="list-unstyled">
+                                        <li>
+                                            <Link to="">test</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test2</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test2</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="">test2</Link>
+                                        </li>
+                                    </ul>
+                                </Nav.Link>
+                               
+                            </Nav>
+                            <Nav className="ms-auto">
+                                <Nav.Link href="#home">Home</Nav.Link>
+                                <Nav.Link href="#link">Link</Nav.Link>
+                               
+                            </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                        </Navbar>
+
+                    {/*  */}
             <Navbar expand="lg" >           
                 <Container>
                 <Navbar.Brand  href="#home">
@@ -23,20 +111,20 @@ const Bunzoslider = () =>
 
                 <Nav className="mx-auto">
                     <div className="nav-items">
-                        <ul className="list-inline d-flex justify-content-center align-items-center gap-5">                     
-                            <li className="list-inline-items ">
+                        <ul className="list-unstyled d-flex justify-content-center align-items-center gap-5">                     
+                            <li className="">
                                 <a className=" d-flex gap-2" href="" >home<i className="bi bi-caret-down-fill"></i></a>
                             </li>
-                            <li className="list-inline-items">
+                            <li className="">
                                 <a className="" href="" >about</a>
                             </li>
-                            <li className="list-inline-items">
+                            <li className="">
                                 <a className="" href="" >category</a>
                             </li>
-                            <li className="list-inline-items">
+                            <li className="">
                                 <a className=" d-flex gap-2" href="" >pages<i className="bi bi-caret-down-fill"></i></a>
                             </li>
-                            <li className="list-inline-items">
+                            <li className="">
                                 <a className="" href="" >contact</a>
                             </li>
                         </ul>
@@ -80,12 +168,12 @@ const Bunzoslider = () =>
                     <div className="nav-items">
                         <ul className="list-inline d-flex justify-content-center align-items-center gap-2">
                         <li className="list-inline-items">
-                                <a className="" href="" >
+                                <a className="" href="#!" >
                                 <Button className="btn-sec"><i className="bi bi-facebook"></i></Button>{' '}
                                 </a>
                             </li>
                             <li className="list-inline-items">
-                                <a className="" href="" >
+                                <a className="" href="#!" >
                                 <Button className="btn-sec"><i className="bi bi-facebook"></i></Button>{' '}
                                 </a>
                             </li>

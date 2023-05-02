@@ -19,3 +19,6 @@
         background-color: #ff7d6b;
         color: #000;
     }
+.form-control:focus{
+    box-shadow: none;
+}

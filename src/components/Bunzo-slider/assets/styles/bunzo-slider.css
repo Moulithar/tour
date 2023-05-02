@@ -1,5 +1,11 @@
+.btn-sec-active{
+    background-color: green;
+}
+.bz-navbar{
+    background-color: #ff7d6b;
+}
 .bunzo-slider{
-    background: url(../../../../images/home-banner.jpg);
+    background: url('../../../../images/home-banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,6 +28,12 @@ a:hover{
 .list-inline{
     display: inline-block;
 }
+
+.bunzo-slider.scrollheader .navbar {
+    background-color: #fff;
+}
+
+
 .bunzo-slider .slider-content{
     color:#fff;
     padding-top: 50px;
@@ -93,6 +105,37 @@ a:hover{
     list-style: none;
     text-decoration: none;
 }
+
+.bz-navbar .navbar-nav .nav-link {
+    position: relative;
+    z-index: 10;
+}
+
+.bz-navbar .navbar-nav .nav-link ul {
+    position: absolute;
+    opacity: 0;
+    transition: all ease 0.3s;
+    background-color: #fff;
+    width: 200px;
+    left: -100px;
+    top: 40px;
+}
+
+.bz-navbar .navbar-nav .nav-link:hover ul {
+    opacity: 1;
+}
+
+.bz-navbar .navbar-nav .nav-link ul li {
+    border-bottom: solid 1px #ccc;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+}
+
+.bz-navbar .navbar-nav .nav-link ul li a {
+    color: #000;
+}
+
 
 @media screen and (max-width:992px){
     .bunzo-slider .slider-content{

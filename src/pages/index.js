@@ -1,7 +1,11 @@
 import * as React from "react"
+import Header from "../components/Header/Header";
+import Bunzoslider from "../components/Bunzo-slider/Bunzo-slider";
+import Team from "../components/Team/Team";
+import Blog from "../components/Blog/blog";
+import Slidercard from "../components/Slider-card/slidercard";
+import Footer from "../components/Footer/Footer";
 import "../components/styles/global.css";
-import "../components/styles/icon.css";
-import "../components/styles/custom.css";
 import img1 from "../images/images1.webp";
 import img2 from "../images/images2.webp";
 import img3 from "../images/images3.webp";
@@ -17,11 +21,39 @@ import img12 from "../images/images12.webp";
 import imone from "../images/01.webp";
 import imtwo from "../images/02.webp";
 import imthree from "../images/03.webp";
-import Header from "../components/Header/Header";
-import Bunzoslider from "../components/Bunzo-slider/Bunzo-slider";
-import Team from "../components/Team/Team";
-import Blog from "../components/Blog/blog";
-import Footer from "../components/Footer/Footer";
+
+const slideContent = [
+  {
+    image: img1,
+    title: "hllow",
+    body: "moulixgdrd",
+  },
+  {
+    image: img2,
+    title: "hllowdghdf",
+    body: "moulidgdfg",
+  },
+  {
+    image: img3,
+    title: 'hllowxchfdfhgtrtgd',
+    body: "moulixfbgfb",
+  },
+  {
+    image: img4,
+    title: "hllowdfghdf",
+    body: "moulidf",
+  },
+  {
+    image: img5,
+    title: "hllowdf",
+    body: "mouli",
+  },
+  {
+    image: img6,
+    title: "hllowx",
+    body: "mouligkjujkjjfcgjfrjyjyjhy",
+  }
+]
 
 // const teamOptions = [
 //   {
@@ -114,9 +146,11 @@ const IndexPage = () => (
  
     <Bunzoslider />
     <Team  />
-  <div>Test merge</div>
+  
     <Blog dataItems={blogOptions}/>
-    <Header />
+    
+    <Slidercard  />
+    <Header owl="mu" tag="test"/>
     <Footer />
     {/* <h1>hello m</h1>
       <div className="text-center">

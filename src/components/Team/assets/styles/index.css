@@ -2,30 +2,56 @@
     margin: 20px 20px 20px 0px;
 }
 .slick-prev:before{
-    color:rgb(0, 0, 0);
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E");
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    /* background-color:#130298; */
+    /* color:rgb(0, 0, 0);
     font-size: 50px;
-    font-weight: 1000; 
+    font-weight: 1000;  */
 }
  .slick-next:before{
-    color:rgb(0, 0, 0);
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E");
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    /* color:rgb(0, 0, 0);
     font-size: 50px;
-    font-weight: 1000; 
+    font-weight: 1000;  */
 }
 
 .slick-prev {
-    font-size: 20px;
-    line-height: 0;
+    /* font-size: 20px;
+    line-height: 0; */
     position: absolute;
     top: -86px;
     left: 967px;
     display: block;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
+    /* padding: 0; */
+    /* transform: translate(0, -50%); */
+    /* cursor: pointer; */
+    /* color: transparent; */
+    padding:20px;
+    border: solid 1px #000;
+    border-radius: 3px;
     outline: none;
-    background: rgb(255, 255, 255);
+    background-color: blue;  
+}
+.slick-prev:hover{
+    background-color: green;
 }
 .slick-next{
     font-size: 0;
@@ -34,17 +60,14 @@
     top: -86px;
     right:54px;
     display: block;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
+    padding:20px;
+    border: solid 1px #000;
+    border-radius: 3px;
 }
 
+.popular-slider{
+
+}
 @media screen and (max-width:992px){
     .slick-prev:before{
         font-size: 20px;

@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import {Container, Row, Col,Button,Nav,Navbar,NavDropdown,Form} from 'react-bootstrap';
 import logo from "../../images/logo.webp";
 import "./assets/styles/footer.css";
 
 const Footer = ()=>{
+
+    const [test, setTest] = useState("hello");
+
+    const subscribeBtn = () => {
+        setTest("active");
+        console.log("test", test);
+    }
+
     return (
         <>
         <div className="footer">
@@ -70,10 +78,10 @@ const Footer = ()=>{
                         <Form.Control type="email" placeholder="email address" />
                     </Form.Group>
                     </Form>
-                    <Button className="btn-main">subscrive now</Button>
+                    <Button className={`btn-main ${test}`} onClick={subscribeBtn}>{test === "active" ? "Subscribed" : "Subscribe Now"}</Button>
                 </Col>
-            </Row>
-        </Container>
+                </Row>
+            </Container>
         </div>
         </>
         
